@@ -1,3 +1,24 @@
+<?php 
+if (isset($_GET["pesan"])) {
+    $pesan = $_GET["pesan"];
+    if ($pesan == "input") {
+        echo "
+            <script>
+                alert('Data berhasil ditambahkan!!');
+            </script>
+        ";
+    } else {
+        echo "
+            <script>
+                alert('Data berhasil diubah!!');
+            </script>        
+        ";
+    }
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +28,9 @@
     <title>Latihan CRUD</title>
 </head>
 <body>
+
+
+    <h3>Latihan CRUD Malasngoding</h3>
     
     <br>
 

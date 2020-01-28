@@ -12,11 +12,7 @@ if (isset($_POST["submit"])){
     $query_input = ("INSERT INTO user VALUE ('','$nama','$alamat','$pekerjaan')");
     mysqli_query($conn, $query_input);
 
-    // return berfungsi untuk mengembalikan nilai dari sebuah fungsi yang dijalankan
-    // untuk return kali ini
-    // jika fungsi berhasil dijalankan maka akan mengembalikan nilai 1 dan jika gagal dijalankan maka akan mengembalikan nilai -1 atau 
-    return mysqli_affected_rows($conn);
-    
+    header("location:index.php?pesan=input");
 }
 
 // jika function tambah bernilai lebih dari 0 yang mana nilai itu dikirimkan dari return mysqli_affected_rows($conn); dan ditangkap oleh $_POST  maka tampilkan alert berhasil dan direct ke halaman index tetapi jika gagal tampilkan alert gagal dan tampilkan letak kesalahan
