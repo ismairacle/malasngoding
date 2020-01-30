@@ -9,7 +9,7 @@ if (isset($_POST["submit"])){
     $alamat = $_POST["alamat"];
     $pekerjaan = $_POST["pekerjaan"];
     // membuat query tambah/input
-    $query_input = ("INSERT INTO user VALUE ('','$nama','$alamat','$pekerjaan')");
+    $query_input = "INSERT INTO user VALUE ('','$nama','$alamat','$pekerjaan')";
     mysqli_query($conn, $query_input);
 
     header("location:index.php?pesan=input");
