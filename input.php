@@ -15,19 +15,6 @@ if (isset($_POST["submit"])){
     header("location:index.php?pesan=input");
 }
 
-// jika function tambah bernilai lebih dari 0 yang mana nilai itu dikirimkan dari return mysqli_affected_rows($conn); dan ditangkap oleh $_POST  maka tampilkan alert berhasil dan direct ke halaman index tetapi jika gagal tampilkan alert gagal dan tampilkan letak kesalahan
-// if (tambah($_POST) > 0) {
-//     echo "<script>
-//         alert('Data berhasil ditambahkan');
-//         <script>
-//     ";
-// } else {
-//     echo "<script>
-//         alert('Data gagal ditambahkan');
-//         <script>
-//     ";
-// }
-
 
 
 

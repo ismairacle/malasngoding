@@ -13,7 +13,7 @@ if (isset($_GET["pesan"])) {
                 alert('Data berhasil diubah!!');
             </script>        
         ";
-    } else {
+    } else  {
         echo "
             <script>
                 alert('Data berhasil dihapus!!');
