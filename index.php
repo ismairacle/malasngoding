@@ -7,10 +7,16 @@ if (isset($_GET["pesan"])) {
                 alert('Data berhasil ditambahkan!!');
             </script>
         ";
-    } else {
+    } elseif ($pesan == "ubah") {
         echo "
             <script>
                 alert('Data berhasil diubah!!');
+            </script>        
+        ";
+    } else {
+        echo "
+            <script>
+                alert('Data berhasil dihapus!!');
             </script>        
         ";
     }
@@ -60,7 +66,7 @@ if (isset($_GET["pesan"])) {
 		<td><?= $data['pekerjaan']; ?></td>
 		<td>
 			<a class="edit" href="edit.php?id=<?= $data['id']; ?>">Edit</a> |
-			<a class="hapus" href="hapus.php?id=<?= $data['id']; ?>">Hapus</a>					
+			<a class="hapus" href="hapus.php?id=<?= $data['id']; ?>" onclick="return confirm('Yakin akan menghapus??');">Hapus</a>					
 		</td>
 	</tr>
     <?php endwhile; ?>
