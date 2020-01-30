@@ -7,7 +7,7 @@ if (isset($_GET["pesan"])) {
                 alert('Data berhasil ditambahkan!!');
             </script>
         ";
-    } elseif ($pesan == "ubah") {
+    } else if ($pesan == "update") {
         echo "
             <script>
                 alert('Data berhasil diubah!!');
